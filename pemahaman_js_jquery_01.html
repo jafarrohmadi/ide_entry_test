@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Pemahaman Js Jquery 01</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    function getNameWithAddress(names){
+        for (let i in names){
+            if(names[i]['Address'] != null){
+                names[i]['Address'] = 'Jalan Protokol Blok A No 1';
+                console.log(names[i])
+                $('#demo').html("Name : " +  names[i]['Name'] + "<br> Address : " + names[i]['Address'] )
+            }
+        }
+    }
+
+    var names = ["Andi", {"Name" : "Gunawan", "Address": "Jl. kemerdekaan 01"}, "Budi"];
+
+    getNameWithAddress(names);
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Pemahaman Js Jquery 02</title>
+    <?php
+    header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+    header("Access-Control-Allow-Headers: Origin");
+    ?>
+</head>
+<body>
+
+<div class="modal-body">
+    <div style="position: relative;" align="center">
+        <img id="loading" src="loader.gif"/></div>
+    <div class="fetched-data"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $("#loading").hide();
+    // alert(rowid)
+    $("#myModal").show();
+    $("#loading").show();
+    $('.fetched-data').html('');
+    $.ajax({
+        type: 'get',
+        url: 'https://test-ujian-masuk.infraedukasi.com/',
+        success: function (data) {
+            console.log(data)
+            $("#loading").hide();
+            $('.fetched-data').html(data);//Show fetched data from database
+
+        }
+    });
+</script>
+</body>
+</html>
+

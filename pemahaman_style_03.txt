@@ -1,0 +1,1 @@
+syntak ke 2 adalah scss , harus generate dulu ke css baru bisa tampil
