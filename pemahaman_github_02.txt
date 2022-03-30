@@ -1,0 +1,9 @@
+ Kloning project. => git clone ...
+ Buat branch baru. => git branch newBranch
+ Checkout => git checkout newBranch
+ Buat perubahan Anda.
+ add perubahan ke git => git commit -m "commit"
+ commit git => git commit -m "commit"
+ push ke git. => git push origin newBranch
+ buka github.com , klik the Compare & pull request buttom.
+ Click Create pull request to open a new pull request

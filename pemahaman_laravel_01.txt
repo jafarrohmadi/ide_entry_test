@@ -1,0 +1,4 @@
+File .env adalah fitur untuk konfigurasi laravel , Semua pengaturan yang ada pada project laravel sudah dikumpulkan dalam file .env
+
+config − direktori ini berisi file-file konfigurasi aplikasi. biasanya diambil dari .env dan biasanya aplikasi menembak ke
+directory config bukan env
